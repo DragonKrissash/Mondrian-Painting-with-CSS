@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container{
+      width: 748px;
+      height: 748px;
+      background-color: #F0F1EC;
+      display: flex;
+      flex-direction: column;
+    }
+    .grid1{
+      display: grid;
+      grid-template-columns: 320px 9px 414px;
+      grid-template-rows: 1fr;
+      height: 414px;
+      width: 100%;
+      margin-bottom: 0px;
+    }
+    .red{
+      background-color: red;
+      margin-bottom: 0px;
+    }
+    .black1{
+      background-color: black;
+      margin-bottom: 0px;
+    }
+    .blackline{
+      background-color: black;
+      height: 9px;
+      margin: 0px;
+    }
+    .grid2{
+      display: grid;
+      grid-template-columns: 320px 9px 351px 9px 59px;
+      grid-template-rows: 285px;
+    }
+    .black21{
+      background-color: black;
+    }
+    .black22{
+      background-color: black;
+    }
+    .blackline2{
+      background-color: black;
+      height: 9px;
+      width: 689px;
+    }
+    .grid3{
+      display: grid;
+      grid-template-columns: 320px 9px 189px 9px 153px 9px;
+      grid-template-rows: 30px;
+    }
+    .black{
+      background-color: black;
+    }
+    .yellow{
+      background-color: #F9D01E;
+    }
+    .purple{
+      background-color: purple;
+    }
+    .grid4{
+      float: right;
+      background-color: black;
+     }
+     .subgrid{margin: 0px;
+      display: flex;
+      flex-direction: column;
+     }
+     .blue{
+      background-color: blue;
+      height: 130px;
+      margin: 0px;
+     }
+     .black10px{
+      background-color: black;
+      height: 10px;
+     }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class=grid1>
+      <div class="red"></div>
+      <div class="black1"></div>
+      <div class="white1"></div>
+    </div>
+    <div class="blackline"></div>
+    <div class=grid2>
+      <div></div>
+      <div class="black21"></div>
+      <div></div>
+      <div class="black22"></div>
+      <div class="subgrid">
+        <div class="blue"></div>
+        <div class="black10px"></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="blackline2"></div>
+    <div class="grid3">
+      <div></div>
+      <div class="black"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
+      <div class="purple"></div>
+      <div class="black"></div>
+    </div>
+    <div class="grid4">
+
+    </div>
+  </div>
+</body>
+
+</html>
